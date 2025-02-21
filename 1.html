@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="refresh" content="3">
+<title>Meta Fun</title>
+
+<link rel="stylesheet" type="text/css" href="meta.css">
+
+<script type="text/javascript">
+ 
+var images=new Array();
+      images[0]="1.jpg";
+      images[1]="2.jpg";
+      images[2]="3.jpg";
+ 
+
+
+     var timer=60000;   /* this is set for one minute in mili-seconds*/
+
+function randomImage() {
+  var i=Math.floor(Math.random()*images.length); 
+          document.getElementById("random").src=images[i];  
+          document.getElementById("random").title=links[i]; 
+          document.getElementById("foo").href=links[i];  
+setTimeout("randomImage()",timer);        
+   }
+
+onload=randomImage;
+ 
+</script>
+
+</head>
+<body>
+
+<div class="right">
+<a id="foo" href="#">
+<img id="random" alt="random image" src="" />
+</a>
+</div>
+
+<div class="text">
+<h1>Meta Text Fun 1 - Meta Refresh</h1>
+Welcome. Here are some meta tag tricks. This page will change the image to the right on refresh. Try it out.<br /><br />
+Use the following links to see examples:<br />
+<a href="index.html">Back home</a><br />
+<a href="2.html">Using metatags to redirect</a><br />
+</div>
+
+</body>
+</html>

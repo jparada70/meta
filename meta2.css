@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/* CSS Document */
+body
+{
+margin:10;
+padding:0;
+font-family:Verdana, Geneva, sans-serif;
+font-size:18px;
+background-color:#FFCC99;
+}
+
+h1 
+{
+font-size:20px;
+font-color:#000000;
+}
+	
+.right
+{
+position:absolute;
+left:0px;
+width:400px;
+background-color:#FFCC99;
+}
+
+.text
+{
+position:absolute;
+left:410px;
+width:500px;
+background-color:#FFCC99;
+}
+
+a:link {color:#334C4C;}    /* unvisited link */
+a:visited {color:#334C4C;} /* visited link */
+a:hover {color:#FFFFCC;}   /* mouse over link */
+a:active {color:#334C4C;}  /* selected link */
+
+
+
